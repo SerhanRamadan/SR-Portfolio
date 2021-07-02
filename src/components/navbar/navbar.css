@@ -1,0 +1,11 @@
+.navbar { width: 100%; min-height: 6rem; background: #cacaca; color: #647288; box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2); position: fixed; top: 0; z-index: 2; }
+
+.navbar .wrapper { padding: 1rem 5rem; display: flex; align-items: center; justify-content: space-between; }
+
+.navbar .wrapper .left img { width: 6rem; }
+
+.navbar .wrapper .center ul { display: flex; list-style: none; }
+
+.navbar .wrapper .center ul li { padding: 1rem; }
+
+.navbar .wrapper .center ul li a { font-size: 1.8rem; color: inherit; font-weight: 500; }

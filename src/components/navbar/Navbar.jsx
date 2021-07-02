@@ -1,12 +1,13 @@
-import './navbar.scss'
+import React from 'react'
+import './navbar.css'
 
 export default function Navbar() {
 	return (
 		<div className='navbar' id='navbar'>
 			<div className='wrapper'>
 				<div className='left'>
-					<a href='#intro' className='logo'>
-						SR.
+					<a href='#intro'>
+						<img src={process.env.PUBLIC_URL + '/logo.svg'} alt='' />
 					</a>
 				</div>
 				<div className='center'>
@@ -29,7 +30,9 @@ export default function Navbar() {
 					</ul>
 				</div>
 				<div className='right'>
-					<div className='socialMedia'></div>
+					<div className='socialMedia'>
+						<h2>Social Media</h2>
+					</div>
 				</div>
 			</div>
 		</div>
