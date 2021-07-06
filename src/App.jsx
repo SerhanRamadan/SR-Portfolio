@@ -6,8 +6,8 @@ import Portfolio from './components/portfolio/Portfolio'
 import Works from './components/works/Works'
 import Testimonials from './components/testimonials/Testimonials'
 import Contact from './components/contact/Contact'
-import '../src/css/app.css'
-import '../src/css/globals.css'
+import '../src/app.css'
+import '../src/globals.css'
 
 function App() {
 	return (

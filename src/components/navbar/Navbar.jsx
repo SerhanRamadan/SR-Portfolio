@@ -1,5 +1,7 @@
 import React from 'react'
 import './navbar.css'
+import SRLogo from '../assets/sr-circle.svg'
+import { FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
 
 export default function Navbar() {
 	return (
@@ -7,7 +9,7 @@ export default function Navbar() {
 			<div className='wrapper'>
 				<div className='left'>
 					<a href='#intro'>
-						<img src={process.env.PUBLIC_URL + '/logo.svg'} alt='' />
+						<img src={SRLogo} alt='SR Coding Logo' />
 					</a>
 				</div>
 				<div className='center'>
@@ -31,7 +33,18 @@ export default function Navbar() {
 				</div>
 				<div className='right'>
 					<div className='socialMedia'>
-						<h2>Social Media</h2>
+						<a href='#'>
+							{' '}
+							<FaGithub className='github' />{' '}
+						</a>
+						<a href='#'>
+							{' '}
+							<FaInstagram className='instagram' />{' '}
+						</a>
+						<a href='#'>
+							{' '}
+							<FaLinkedinIn className='linkedin' />{' '}
+						</a>
 					</div>
 				</div>
 			</div>

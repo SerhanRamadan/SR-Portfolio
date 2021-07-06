@@ -5,7 +5,7 @@
 	min-height: 6rem;
 	background: rgb(202, 202, 202);
 	color: $primary-color;
-	box-shadow: 0 2rem 3rem rgba($color: #000000, $alpha: 0.2);
+	box-shadow: 0 0.5rem 1rem rgba($color: #000000, $alpha: 0.2);
 	position: fixed;
 	top: 0;
 	z-index: 2;
@@ -18,7 +18,7 @@
 
 		.left {
 			img {
-				width: 6rem;
+				width: 14rem;
 			}
 		}
 		.center {
@@ -33,8 +33,27 @@
 						font-size: 1.8rem;
 						color: inherit;
 						font-weight: 500;
+						transition: all 0.4s ease-in-out;
+					}
+					a:hover {
+						color: $accent-color;
 					}
 				}
+			}
+		}
+		.right {
+			.github,
+			.instagram,
+			.linkedin {
+				font-size: 2.5rem;
+				margin-right: 1rem;
+				color: $primary-color;
+				transition: all 0.4s ease-in-out;
+			}
+			.github:hover,
+			.instagram:hover,
+			.linkedin:hover {
+				color: $accent-color;
 			}
 		}
 	}

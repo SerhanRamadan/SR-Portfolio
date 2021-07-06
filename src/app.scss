@@ -7,6 +7,7 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
+	scroll-behavior: smooth;
 }
 
 html {
@@ -27,12 +28,6 @@ a {
 		background-color: aqua;
 		position: relative;
 		top: 6rem;
-		// scroll-behavior: smooth;
-
-		// scrollbar-width: none;
-		// &::-webkit-scrollbar {
-		// 	display: none;
-		// }
 
 		> * {
 			width: 100vw;
