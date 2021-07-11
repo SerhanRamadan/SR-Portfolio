@@ -1,11 +1,11 @@
 import React from 'react'
 import './navbar.css'
 import SRLogo from '../assets/sr-circle.svg'
-import { FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
+import { FaGithub, FaInstagramSquare, FaLinkedinIn } from 'react-icons/fa'
 
-export default function Navbar() {
+export default function Navbar({ menuOpen, setMenuOpen }) {
 	return (
-		<div className='navbar' id='navbar'>
+		<div className={'navbar ' + (menuOpen && 'active')} id='navbar'>
 			<div className='wrapper'>
 				<div className='left'>
 					<a href='#intro'>
@@ -33,18 +33,21 @@ export default function Navbar() {
 				</div>
 				<div className='right'>
 					<div className='socialMedia'>
-						<a href='#'>
-							{' '}
-							<FaGithub className='github' />{' '}
+						<a href='#intro'>
+							<FaGithub className='github' />
 						</a>
-						<a href='#'>
-							{' '}
-							<FaInstagram className='instagram' />{' '}
+						<a href='#intro'>
+							<FaInstagramSquare className='instagram' />
 						</a>
-						<a href='#'>
-							{' '}
-							<FaLinkedinIn className='linkedin' />{' '}
+						<a href='#intro'>
+							<FaLinkedinIn className='linkedin' />
 						</a>
+					</div>
+					{/* Hamburger Menu to be imported to media query */}
+					<div className='hamburger' onClick={() => setMenuOpen(!menuOpen)}>
+						<span className='line1'></span>
+						<span className='line2'></span>
+						<span className='line3'></span>
 					</div>
 				</div>
 			</div>

@@ -1,6 +1,6 @@
-.navbar { width: 100%; min-height: 6rem; background: #cacaca; color: #647288; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); position: fixed; top: 0; z-index: 2; }
+.navbar { width: 100%; min-height: 6rem; background: #f4f4f4; color: #647288; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); position: fixed; top: 0; z-index: 2; }
 
-.navbar .wrapper { padding: 1rem 5rem; display: flex; align-items: center; justify-content: space-between; }
+.navbar .wrapper { padding: 1rem 15rem; display: flex; align-items: center; justify-content: space-between; }
 
 .navbar .wrapper .left img { width: 14rem; }
 
@@ -12,6 +12,18 @@
 
 .navbar .wrapper .center ul li a:hover { color: #0684ba; }
 
-.navbar .wrapper .right .github, .navbar .wrapper .right .instagram, .navbar .wrapper .right .linkedin { font-size: 2.5rem; margin-right: 1rem; color: #647288; transition: all 0.4s ease-in-out; }
+.navbar .wrapper .right { display: flex; align-items: center; margin-right: 0; }
+
+.navbar .wrapper .right .github, .navbar .wrapper .right .instagram, .navbar .wrapper .right .linkedin { margin-top: 0.4rem; font-size: 2.5rem; margin-right: 1rem; color: #647288; transition: all 0.4s ease-in-out; }
 
 .navbar .wrapper .right .github:hover, .navbar .wrapper .right .instagram:hover, .navbar .wrapper .right .linkedin:hover { color: #0684ba; }
+
+.navbar .wrapper .right .hamburger { width: 3.2rem; height: 2.5rem; display: flex; flex-direction: column; justify-content: space-between; align-items: center; cursor: pointer; }
+
+.navbar .wrapper .right .hamburger span { width: 100%; height: 0.3rem; background-color: #647288; transform-origin: left; transition: all 2s ease; }
+
+.navbar.active .hamburger span:first-child { transform: rotate(45deg); }
+
+.navbar.active .hamburger span:nth-child(2) { opacity: 0; }
+
+.navbar.active .hamburger span:last-child { transform: rotate(-45deg); }
